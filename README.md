@@ -1,4 +1,4 @@
-# liriNodeApp
+# lirinodeapp
 
 # ABOUT
 Liri is a command line Node Application that takes in parameters for songs, bands, and movies and returns the data.

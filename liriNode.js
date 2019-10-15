@@ -1,9 +1,6 @@
 // require .env //
 require("dotenv").config();
 
-// require request //
-//let request = require("request");
-
 // require moment //
 var moment = require("moment");
 
