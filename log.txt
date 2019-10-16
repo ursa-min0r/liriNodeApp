@@ -1,17 +1,10 @@
 
-Artist: Shania TwainForever And For Always
 
-Artist: Tim McGraw
-Just To See You Smile
-
-Artist: Dixie Chicks
-
-Song: Cowboy Take Me Away
-
-Artist: Deana CarterNaNStrawberry Wine
-
-Artist: Randy Travis
-Song: Forever and Ever, Amen
-
-Artist: garth brooks
+Artist: Garth Brooks
 Venue: Neyland Stadium
+
+Artist: Deana Carter
+Song: Strawberry Wine
+
+Movie: Steel Magnolias
+Actors/Actresses: Sally Field, Dolly Parton, Shirley MacLaine, Daryl Hannah

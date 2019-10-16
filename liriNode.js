@@ -126,7 +126,7 @@ function movieThis(movie) {
             console.log("* Plot: " + response.data.Plot + "\r\n");
             console.log("* Actors/Actresses: " + response.data.Actors + "\r\n");
 
-            var movieLog = "\nMovie: " + response.data.Title + "\r\n"
+            var movieLog = "\nMovie: " + response.data.Title + "\nActors/Actresses: " + response.data.Actors + "\r\n"
             fs.appendFile("log.txt", movieLog, function (err) {
 
                 if (err) {
@@ -151,6 +151,7 @@ function doThis() {
 
             var doThisData = data.split(",");
             userCommand(doThisData[0], doThisData[1]);
+
         }
 
     });
