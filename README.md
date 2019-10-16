@@ -46,3 +46,9 @@ RANDOM.TXT (READ FILE AND RUN COMMAND)
 ![doThisError](/Images/doThisError.jpeg)
 I kept getting back a "Search and Query are not defined" error and was at a loss for how to fix it. 
 As the working examples show, each search and query on their own run, but when running "do-what-it-says", the command would not bring back the data read from the random.txt file.
+
+# UPDATE
+
+RANDOM.TXT (READ FILE AND RUN COMMAND)
+![doThis](/Images/doThis.jpeg)
+Global Variables will find you, and they will come for you...
