@@ -91,7 +91,7 @@ function spotifyThisSong(songName) {
         console.log("Album: " + data.tracks.items[0].album.name);
         console.log("Song Preview: " + data.tracks.items[0].href + "\r\n");
 
-        var spotifyLog = "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\r\n";
+        var spotifyLog = "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\nSong: " + data.tracks.items[0].name + "\r\n";
         fs.appendFile("log.txt", spotifyLog, function (err) {
 
             if (err) {
