@@ -8,3 +8,42 @@ Song: Strawberry Wine
 
 Movie: Steel Magnolias
 Actors/Actresses: Sally Field, Dolly Parton, Shirley MacLaine, Daryl Hannah
+
+Artist: Julien Baker
+Venue: UniBar ADL
+
+Artist: Bon Iver
+Venue: The Anthem
+
+Artist: Damien Jurado
+Song: Working Titles
+
+Movie: The Matrix
+Actors/Actresses: Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss, Hugo Weaving
+
+Artist: monsta x
+Venue: Allstate Arena
+
+Artist: Deana Carter
+Song: Strawberry Wine
+
+Artist: garth brooks
+Venue: Neyland Stadium
+
+Artist: emmylou harris
+Venue: Warner Theatre
+
+Movie: The Nightmare Before Christmas
+Actors/Actresses: Danny Elfman, Chris Sarandon, Catherine O'Hara, William Hickey
+
+Movie: Summer Wars
+Actors/Actresses: Ryûnosuke Kamiki, Nanami Sakuraba, Mitsuki Tanimura, Takahiro Yokokawa
+
+Movie: Digimon: The Movie
+Actors/Actresses: Lara Jill Miller, Joshua Seth, Bob Papenbrook, David Lodge
+
+Artist: Backstreet Boys
+Song: I Want It That Way
+
+Artist: Conway Twitty
+Song: Hello Darlin'

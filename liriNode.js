@@ -12,6 +12,7 @@ var keys = require("./keys.js");
 
 // spotify //
 var Spotify = require("node-spotify-api");
+var spotify = new Spotify(keys.spotify);
 
 // axios access to omdb && bands in town //
 var axios = require("axios");
@@ -75,8 +76,10 @@ function spotifyThisSong(songName) {
         songName = "Ace of Base The Sign";
     };
 
-    var songName = userQuery;
-    var spotify = new Spotify(keys.spotify);
+
+ 
+  
+    
 
     spotify.search({ type: "track", query: songName }, function (err, data) {
 
@@ -147,9 +150,14 @@ function doThis() {
             return console.log(error)
         } else {
 
-            console.log(data);
+           
 
             var doThisData = data.split(",");
+
+     
+        
+
+          
             userCommand(doThisData[0], doThisData[1]);
 
         }
