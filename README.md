@@ -23,22 +23,22 @@ node liri.js do-what-it-says
 # WORKING EXAMPLES
 
 CONCERT-THIS
-<img src="https://ibb.co/KF71qQV" />
+<img src="/LiriNodeApp/Images/concert-this.jpg">
 
 SPOTIFY-THIS (NO USER QUERY, DEFAULTS TO ACE OF BASE "THE SIGN")
-<img src="https://ibb.co/db5ZTRR" />
+<img src="https://ibb.co/db5ZTRR">
 
 SPOTIFY-THIS
-<img src="https://ibb.co/c6Kbfsg" />
+<img src="https://ibb.co/c6Kbfsg">
 
 MOVIE-THIS (NO USER QUERY, DEFAULTS TO "MR. NOBODY")
-<img src="https://ibb.co/ts1bsPT" />
+<img src="https://ibb.co/ts1bsPT">
 
 MOVIE-THIS
-<img src="https://ibb.co/YhZv5Hw" />
+<img src="https://ibb.co/YhZv5Hw">
 
 LOG.TXT (APPENDED USER QUERIES)
-<img src="https://ibb.co/ZcJWNHv" />
+<img src="https://ibb.co/ZcJWNHv">
 
 # ERRORS
 
