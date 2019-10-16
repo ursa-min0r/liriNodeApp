@@ -12,7 +12,6 @@ var keys = require("./keys.js");
 
 // spotify //
 var Spotify = require("node-spotify-api");
-var spotify = new Spotify(keys.spotify);
 
 // axios access to omdb && bands in town //
 var axios = require("axios");
@@ -27,16 +26,16 @@ function userCommand(userInput, userQuery) {
 
     switch (userInput) {
         case "concert-this":
-            concertThis();
+            concertThis(userQuery);
             break;
         case "spotify-this":
-            spotifyThisSong();
+            spotifyThisSong(userQuery);
             break;
         case "movie-this":
-            movieThis();
+            movieThis(userQuery);
             break;
         case "do-what-it-says":
-            doThis(userQuery);
+            doThis();
             break;
         default:
             console.log("Please enter a command, I'm not a mind reader.")
@@ -57,7 +56,7 @@ function concertThis(artist) {
             console.log("Location: " + response.data[0].venue.city + "\r\n");
             console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\r\n");
 
-            var concertLog = "\nArtist: " + artist + "\nVenue: " + response.data[0].venue.name;
+            var concertLog = "\nArtist: " + artist + "\nVenue: " + response.data[0].venue.name + "\r\n";
             fs.appendFile("log.txt", concertLog, function (err) {
 
                 if (err) {
@@ -76,6 +75,9 @@ function spotifyThisSong(songName) {
         songName = "Ace of Base The Sign";
     };
 
+    var songName = userQuery;
+    var spotify = new Spotify(keys.spotify);
+
     spotify.search({ type: "track", query: songName }, function (err, data) {
 
         if (err) {
@@ -89,7 +91,7 @@ function spotifyThisSong(songName) {
         console.log("Album: " + data.tracks.items[0].album.name);
         console.log("Song Preview: " + data.tracks.items[0].href + "\r\n");
 
-        var spotifyLog = "\nArtist: " + data.tracks.items[0].album.artists[0].name
+        var spotifyLog = "\nArtist: " + data.tracks.items[0].album.artists[0].name + "\r\n";
         fs.appendFile("log.txt", spotifyLog, function (err) {
 
             if (err) {
@@ -107,14 +109,15 @@ function movieThis(movie) {
     if (!movie) {
         movie = "Mr.Nobody";
     };
-
-    var movieQueryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+    var movie = userQuery;
+    var movieQueryURL = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
+    //console.log(movieQueryURL);
 
     axios.request(movieQueryURL).then(
         function (response) {
 
             console.log("------------------------------------");
-            console.log("* Title: " + response.date.Title + "\r\n");
+            console.log("* Title: " + response.data.Title + "\r\n");
             console.log("* Year Released: " + response.data.Year + "\r\n");
             console.log("* IMDB Rating: " + response.data.imdbRating + "\r\n");
             console.log("* Rotten Tomatoes Rating: " + response.data.Ratings[1].Value + "\r\n");
@@ -123,7 +126,7 @@ function movieThis(movie) {
             console.log("* Plot: " + response.data.Plot + "\r\n");
             console.log("* Actors/Actresses: " + response.data.Actors + "\r\n");
 
-            var movieLog = "\nMovie: " + response.data.title + "\n"
+            var movieLog = "\nMovie: " + response.data.Title + "\r\n"
             fs.appendFile("log.txt", movieLog, function (err) {
 
                 if (err) {
@@ -137,15 +140,15 @@ function movieThis(movie) {
 };
 
 function doThis() {
+    fs.readFile("random.txt", "utf8", function (error, data) {
 
-    fs.readFile("random.txt", "utf8", function (err, data) {
+        if (error) {
 
-        if (err) {
-
-            return console.log(err)
+            return console.log(error)
         } else {
 
             console.log(data);
+
             var doThisData = data.split(",");
             userCommand(doThisData[0], doThisData[1]);
         }

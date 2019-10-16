@@ -19,3 +19,11 @@ node liri.js movie-this + (movie title)
 
 To run the RANDOM.TXT file
 node liri.js do-what-it-says
+
+# WORKING EXAMPLES
+
+<img src="http://img.link.here" />
+<img src="http://img.link.here" />
+<img src="http://img.link.here" />
+<img src="http://img.link.here" />
+<img src="http://img.link.here" />
