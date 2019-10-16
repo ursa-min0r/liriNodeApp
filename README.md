@@ -23,26 +23,26 @@ node liri.js do-what-it-says
 # WORKING EXAMPLES
 
 CONCERT-THIS
-<img src="/LiriNodeApp/Images/concert-this.jpg">
+![concert-this](/Images/concertThis.jpeg)
 
 SPOTIFY-THIS (NO USER QUERY, DEFAULTS TO ACE OF BASE "THE SIGN")
-<img src="https://ibb.co/db5ZTRR">
+![spotify-this](/Images/spotifyThisBlank.jpeg)
 
 SPOTIFY-THIS
-<img src="https://ibb.co/c6Kbfsg">
+![spotify-this + song](/Images/spotify-this.jpeg)
 
 MOVIE-THIS (NO USER QUERY, DEFAULTS TO "MR. NOBODY")
-<img src="https://ibb.co/ts1bsPT">
+![movie-this](/Images/movieThisBlank.jpeg)
 
 MOVIE-THIS
-<img src="https://ibb.co/YhZv5Hw">
+![movie-this + movie](/Images/movieThis.jpeg)
 
 LOG.TXT (APPENDED USER QUERIES)
-<img src="https://ibb.co/ZcJWNHv">
+![log.txt](/Images/logTXT.jpeg)
 
 # ERRORS
 
 RANDOM.TXT (READ FILE AND RUN COMMAND)
-<img src="https://ibb.co/WstgCwP" />
+![doThisError](/Images/doThisError.jpeg)
 I kept getting back a "Search and Query are not defined" error and was at a loss for how to fix it. 
 As the working examples show, each search and query on their own run, but when running "do-what-it-says", the command would not bring back the data read from the random.txt file.
